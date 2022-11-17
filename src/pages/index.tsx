@@ -11,7 +11,7 @@ export default function Home() {
       <div className="border-r-2 border-gray-500 pt-36	 ">
         <Navbar />
       </div>
-      <main className="w-[40%] mobile:w-[80%]  md:w-[60%] lg:w-[50%] xl:w-[35%]  h-screen border-r-2 border-gray-500">
+      <main className="w-[40%] mobile:w-[80%]  md:w-[65%] lg:w-[50%] xl:w-[40%]  2xl:w-[30%]   h-screen border-r-2 border-gray-500">
         <div className="border-t-2 border-b-2 border-gray-500 ">
           <div className="text-white text-2xl ml-6 mt-3"> Página Inicial </div>
           <div className=" flex justify-center gap-12 mt-8 mb-2">
@@ -31,12 +31,10 @@ export default function Home() {
             </button>
           </div>
         </div>
-
       </main>
       <div>
-          <Leftbar />
-        </div>
-
+        <Leftbar />
+      </div>
     </div>
   );
 }

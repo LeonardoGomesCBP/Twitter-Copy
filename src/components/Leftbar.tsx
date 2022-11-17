@@ -1,9 +1,10 @@
 import { AiOutlineSearch } from "react-icons/ai";
+import Trending from "./Trending";
 
 export default function Leftbar() {
   return (
     <>
-      <div className="flex-col">
+      <div className="flex-col mobileTablet:hidden">
         <label
           htmlFor="buscar"
           className="relative text-gray-400 focus-within:text-gray-600 block ml-8"
@@ -18,9 +19,13 @@ export default function Leftbar() {
           />
         </label>
 
-        <div className="bg-[#273340] rounded-2xl ml-7 mt-6 p-2">
-          <div className="text-white text-xl"> O que está acontecendo </div>
+        <div className="bg-[#273340] rounded-2xl ml-7 mt-6 p-5">
+          <div className="text-white text-xl font-bold mb-6"> O que está acontecendo </div>
+       
+       
+       <Trending/>
         </div>
+
       </div>
     </>
   );
