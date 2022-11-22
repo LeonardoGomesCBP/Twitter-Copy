@@ -1,12 +1,15 @@
-import { IconType } from "react-icons";
+import { GrTwitter } from "react-icons/gr";
 import { Data } from "../mocks/NavbarButtonsData";
 
 export default function Navbar() {
   return (
     <>
-      <div className="flex-1 bg-gray-700 mr-8 mobile:ml-4 md:ml-14 lg:ml-24 lgxl:ml-42 2xl:ml-96 w-85">
-        {Data.map((Button, i) => (
-          <button className=" text-white flex gap-3 text-2xl   hover:border-solid hover:bg-gray-600 	 hover:bg-opacity-20  mb-8">
+
+      <div className="flex-1 bg-[#15202B] mr-8 mobile:ml-4 md:ml-14 lg:ml-24 lgxl:ml-42 2xl:ml-96 w-85">
+      <GrTwitter size={30} color="white" className="ml-3 mb-2"/>
+
+        {Data.map((Button) => (
+          <button className="text-white font-medium flex gap-3 text-xl   hover:border-solid hover:bg-green-600 p-3 	 hover:bg-opacity-20 hover:rounded-full mb-2">
             <Button.Icon size={35} /> <div className="navbarBreakpoint:hidden">   {Button.Title}   </div>
           </button>
         ))}

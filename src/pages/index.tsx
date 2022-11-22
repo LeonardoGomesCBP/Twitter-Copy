@@ -4,24 +4,25 @@ import Navbar from "../components/Navbar";
 import userIcon from "../assets/userIcon.jpg";
 import Image from "next/image";
 import Leftbar from "../components/Leftbar";
+import Post from "../components/Post";
 
 export default function Home() {
   return (
     <div className="flex">
-      <div className="border-r-2 border-gray-500 pt-36	 ">
+      <div className="border-r-2 border-gray-500 pt-4">
         <Navbar />
       </div>
       <main className="w-[40%] mobile:w-[80%]  md:w-[65%] lg:w-[50%] xl:w-[40%]  2xl:w-[30%]   h-screen border-r-2 border-gray-500">
         <div className="border-t-2 border-b-2 border-gray-500 ">
           <div className="text-white text-2xl ml-6 mt-3"> Página Inicial </div>
-          <div className=" flex justify-center gap-12 mt-8 mb-2">
+          <div className=" flex  gap-6 mt-8 mb-2">
             <Image
               src={userIcon}
               alt="etzinho"
               className=" w-12 h-12 rounded-full ml-6"
             />
             <textarea
-              className="resize-none bg-gray-700 text-white w-[80%] h-16  outline-none focus:border-b-[1px] border-gray-800"
+              className="resize-none bg-[#15202B] text-white w-[80%] h-16  outline-none focus:border-b-[1px] border-gray-800 text-2xl text"
               placeholder="O que está acontecendo?"
             ></textarea>
           </div>
@@ -30,7 +31,10 @@ export default function Home() {
               Tweetar
             </button>
           </div>
+
         </div>
+        <Post/>
+
       </main>
       <div>
         <Leftbar />

@@ -19,7 +19,7 @@ export default function Leftbar() {
           />
         </label>
 
-        <div className="bg-[#273340] rounded-2xl ml-7 mt-6 p-5">
+        <div className="bg-[#1E2732] rounded-2xl ml-7 mt-6 p-5">
           <div className="text-white text-xl font-bold mb-6"> O que está acontecendo </div>
        
        
