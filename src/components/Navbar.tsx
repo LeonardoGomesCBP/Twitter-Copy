@@ -9,7 +9,7 @@ export default function Navbar() {
       <GrTwitter size={30} color="white" className="ml-3 mb-2"/>
 
         {Data.map((Button) => (
-          <button className="text-white font-medium flex gap-3 text-xl   hover:border-solid hover:bg-green-600 p-3 	 hover:bg-opacity-20 hover:rounded-full mb-2">
+          <button className="text-white font-medium flex gap-3 text-xl   hover:border-solid hover:bg-green-600 p-3 	 hover:bg-opacity-20 hover:rounded-full mb-2" key={Button.Title}>
             <Button.Icon size={35} /> <div className="navbarBreakpoint:hidden">   {Button.Title}   </div>
           </button>
         ))}
